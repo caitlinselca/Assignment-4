@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
   </head>
   <body>
@@ -22,17 +23,20 @@
     </div>
 
 
-    <h2>Login Screen</h2>
+    <h1>Welcome</h1>
     <p>Type in username and password then hit submit:</p>
 
     <form action="">
-    User name:<br>
-    <input type="text" name="userid">
-    <br>
-    User password:<br>
-    <input type="password" name="psw">
-    <input type="submit" value="Submit">
+      User name:<br>
+      <input type="text" name="userid" id="userid">
+      <br>
+      Email:<br>
+      <input type="text" name="email" id="email">
+      <br>
+      User password:<br>
+      <input type="password" name="psw" id="psw">
+      <input type="submit" value="Submit" onclick="event.preventDefault(); validate();">
     </form>
 
-    </body>
+  </body>
 </html>
