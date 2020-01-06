@@ -3,12 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="script.js"></script>
   </head>
   <body>
 
+    <div id="ans"></div>
+
+    <button onclick="right()">I'm right!</button>
+    <button onclick="noMe()">No, I'm right!</button>
+
+
+    <br>
+    <br>
+    <br>
+
+    <div style="height: 300px;width: 300px;border: 15px solid green;" onmouseover="dontHover()">
+      Don't hover over me
+    </div>
+
+
     <h2>Login Screen</h2>
     <p>Type in username and password then hit submit:</p>
-    
+
     <form action="">
     User name:<br>
     <input type="text" name="userid">
@@ -17,6 +33,6 @@
     <input type="password" name="psw">
     <input type="submit" value="Submit">
     </form>
-    
+
     </body>
 </html>
