@@ -19,6 +19,7 @@ const validate = () => {
     alert("Password Incorrect!");
   } else {
     document.querySelector("h1").innerHTML = "Logged in";
+    document.querySelector("h1").classList.add("in");
   }
 };
 
