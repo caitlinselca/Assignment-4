@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <!-- CSS stylesheet -->
     <link href="style.css" rel="stylesheet"/>
-    <script src="script.js"></script>
   </head>
   <body>
 
+    <!--
+         Create an HTML page with two buttons that argue with each other. When one
+         button is clicked, the text "I'm right" should be placed next to it. When
+         the other button is clicked, the text is replaced with, "No, I'm right!"
+    -->
     <div id="ans"></div>
 
     <button onclick="right()">I'm right!</button>
@@ -18,11 +23,27 @@
     <br>
     <br>
 
+
+    <!--
+         Create an HTML page with a large element on the page that says
+         "Don't hover over me" inside of it.  When you hover over the element, send
+         an alert to the user that says, "Hey, I told you not to hover over me!
+    -->
     <div id="dontHover" onmouseover="dontHover()">
       Don't hover over me
     </div>
 
 
+    <!--
+         Create an HTML page with a form. It should include inputs for a username,
+         email, and password. Also a submit button. In a Javascript file, write a
+         program which checks the following things:
+         a. checks that the password is 12345678
+         b. if the password is incorrect, send an alert message
+         c. Your page should also include an <h1> tag. If the information in the form
+         is correct, have Javascript change the text in the <h1>.HTML page. It should
+         include inputs for a username, email, and password. Also a submit button.
+    -->
     <h1>Welcome</h1>
     <p>Type in username and password then hit submit:</p>
 
@@ -38,5 +59,28 @@
       <input type="submit" value="Submit" onclick="event.preventDefault(); validate();">
     </form>
 
+
+    <!--
+         BONUS: Create an HTML page with a form that asks the user to input the value
+         of a sphere's radius. Write Javascript that gives them back the volume of
+         the sphere. (There are many different ways to execute this. You can give the
+         user information back in another input box on the page, as an alert, or any
+         other way you can think of. You can look up how to use the Javascript Math
+         object to simplify your calculations.)
+
+    -->
+    <h2>Bonus: Volume of Sphere</h2>
+    <h3>(Enter input into box and then click somewhere else on the screen to finish.)</h3>
+    Radius of Sphere:
+    <input type="text" name="radius" id="radius">
+    <br>
+    Volume of Sphere:
+    <div id="volume"></div>
+
+    <!--
+         We include the javascript file at the end since it has event listeners,
+         which require elements to already be loaded into DOM.
+    -->
+    <script src="script.js"></script>
   </body>
 </html>
