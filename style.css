@@ -1,5 +1,43 @@
+/*
+Make title block look like h1 without using an actual h1 tag
+In addition center it and make it fancy
+*/
+#title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-bottom: 1px solid #848484; /*makes title separated from rest of the words*/
+}
+
+/*
+Make dontHover box more apparent
+*/
 #dontHover{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border: 15px solid green;
+}
+
+/*
+Since we have a green box, might as well have some green buttons
+*/
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+}
+
+/*
+Make submit button look like other buttons
+In addition move to a bit to the right and round to look more like end of form
+*/
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  margin-left: 225px;
+  border-radius: 20px;
 }

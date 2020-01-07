@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <!-- CSS stylesheet -->
-    <link href="style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+
+    <p id="title">
+      Assignment #4: DOM Challenges II
+    </p>
+
 
     <!--
          Create an HTML page with two buttons that argue with each other. When one
@@ -48,14 +53,12 @@
     <p>Type in username and password then hit submit:</p>
 
     <form action="">
-      User name:<br>
-      <input type="text" name="userid" id="userid">
+      <input type="text" name="userid" id="userid" placeholder="Username">
       <br>
-      Email:<br>
-      <input type="text" name="email" id="email">
+      <input type="text" name="email" id="email" placeholder="E-mail">
       <br>
-      User password:<br>
-      <input type="password" name="psw" id="psw">
+      <input type="password" name="psw" id="psw" placeholder="Password">
+      <br>
       <input type="submit" value="Submit" onclick="event.preventDefault(); validate();">
     </form>
 
